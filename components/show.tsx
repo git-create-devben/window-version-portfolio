@@ -145,7 +145,7 @@ export const AboutMe = () => {
       <Drawer
         opened={opened}
         onClose={close}
-        title="Portfolio chatbot"
+        title="Anout me (devben)"
         className="p-0"
         position="right"
         styles={{
