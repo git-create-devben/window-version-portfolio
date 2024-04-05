@@ -1,0 +1,12 @@
+{
+    "languages": ["Python", "JavaScript", "Java"],
+    "skills": ["Machine Learning", "Web Development", "Data Analysis"],
+    "experience": [
+      {
+        "company": "Acme Inc.",
+        "role": "Software Engineer",
+        "duration": "2 years"
+      }
+    ]
+  }
+  
