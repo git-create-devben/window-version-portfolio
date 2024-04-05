@@ -1,6 +1,23 @@
+import { IconHeart } from "@tabler/icons-react";
+import Link  from "next/link";
+import { AlertTitle, AlertDescription, Alert } from "../ui/alert";
 export default function Experience() {
   return (
     <main className="flex flex-col gap-4 p-4">
+            <Alert className="mt-2 rounded-none bg-gray-400" variant="default">
+          <IconHeart className="h-4 w-4" />
+          <AlertTitle>Heads up!</AlertTitle>
+          <AlertDescription className="text-sm text-black">
+            You can view more on my{" "}
+            <Link href="" className="text-blue-900 underline">
+              Resume
+            </Link>{" "}
+            and my{" "}
+            <Link href="" className="text-blue-900 underline">
+              LinkdIn
+            </Link>
+          </AlertDescription>
+        </Alert>
       <div>
         <h1 className="text-2xl text-gray-300 underline-offset-4">
           United State of African

@@ -114,20 +114,7 @@ export const Experiences = () => {
           },
         }}
       >
-        <Alert className="mt-2 rounded-none bg-gray-400" variant="default">
-          <IconHeart className="h-4 w-4" />
-          <AlertTitle>Heads up!</AlertTitle>
-          <AlertDescription className="text-sm text-black">
-            You can view more on my{" "}
-            <Link href="" className="text-blue-900 underline">
-              Resume
-            </Link>{" "}
-            and my{" "}
-            <Link href="" className="text-blue-900 underline">
-              LinkdIn
-            </Link>
-          </AlertDescription>
-        </Alert>
+  
         <Experience />
       </Drawer>
       {/* </div> */}
