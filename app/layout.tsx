@@ -5,7 +5,11 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ColorSchemeScript, MantineProvider } from "@mantine/core";
 import "@mantine/core/styles.css";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import "@mantine/notifications/styles.css";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Notifications } from "@mantine/notifications";
+// import { Toaster } from "@/components/ui/toaster"
+import {Toaster} from 'react-hot-toast'
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -23,14 +27,19 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <ColorSchemeScript />
-       
       </head>
       <body
         className={`${inter.className} bg-black`}
         suppressContentEditableWarning
         suppressHydrationWarning
       >
-        <MantineProvider>{children}</MantineProvider>
+        <MantineProvider>
+        {children}
+          <Notifications /> 
+          <SpeedInsights />
+          <Toaster  position="top-left"/>
+
+        </MantineProvider>
       </body>
     </html>
   );
