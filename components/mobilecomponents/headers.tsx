@@ -67,7 +67,7 @@ export default function MobileHeader() {
         <div className="flex items-center justify-between">
           <Button className="border-[1px] border-[#ccc]  bg-transparent ">
           
-            <a download href='../../devben.pdf' className="flex items-center justify-between">
+            <a  href="../../devben.pdf" className="flex items-center justify-between" download>
             <Player
               autoplay
               loop
