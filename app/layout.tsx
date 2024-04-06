@@ -9,6 +9,7 @@ import "@mantine/notifications/styles.css";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Notifications } from "@mantine/notifications";
 // import { Toaster } from "@/components/ui/toaster"
+import { Analytics } from "@vercel/analytics/react"
 import {Toaster} from 'react-hot-toast'
 const inter = Inter({ subsets: ["latin"] });
 
@@ -37,6 +38,7 @@ export default function RootLayout({
         {children}
           <Notifications /> 
           <SpeedInsights />
+          <Analytics/>
           <Toaster  position="top-left"/>
 
         </MantineProvider>
