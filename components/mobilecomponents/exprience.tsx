@@ -9,11 +9,11 @@ export default function Experience() {
           <AlertTitle>Heads up!</AlertTitle>
           <AlertDescription className="text-sm text-black">
             You can view more on my{" "}
-            <Link href="" className="text-blue-900 underline">
+            <a href="../../devben.pdf" download className="text-blue-900 underline">
               Resume
-            </Link>{" "}
+            </a>
             and my{" "}
-            <Link href="" className="text-blue-900 underline">
+            <Link href="https://www.linkedin.com/in/benlad/" className="text-blue-900 underline">
               LinkdIn
             </Link>
           </AlertDescription>
