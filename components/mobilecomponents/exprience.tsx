@@ -7,16 +7,18 @@ export default function Experience() {
       <Alert className="mt-2 rounded-none bg-gray-400" variant="default">
         <IconHeart className="h-4 w-4" />
         <AlertTitle>Heads up!</AlertTitle>
-        <AlertDescription className="text-sm text-black">
+        <AlertDescription className="text-sm text-black space-x-2">
           You can view more on my{" "}
           <a
             href="../../devben.pdf"
             download
-            className="text-blue-900 underline"
+            className="text-blue-900 underline mr-2"
           >
             Resume
           </a>
-          and my{" "}
+
+          and 
+
           <Link
             href="https://www.linkedin.com/in/benlad/"
             className="text-blue-900 underline"
