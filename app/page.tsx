@@ -1,6 +1,7 @@
-import Acsess from "@/components/acsess";
+import Join from "./join";
+
 export default function Home() {
-  return <Acsess />  
+  return <Join/>  
 }
 
 

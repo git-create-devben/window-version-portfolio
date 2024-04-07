@@ -19,12 +19,12 @@ import Link from "next/link";
 import Image from "next/image";
 export default function About() {
   return (
-    <main className="space-y-4 p-2">
+    <main className="space-y-4 p-4">
       <div>
         <h1 className="text-center text-3xl font-extrabold text-gray-500">
           About me(DevBen)
         </h1>
-        <article className="text-gray-200 ">
+        <article className="text-gray-200 mt-4">
           Hi ✌️, I&apos;m Benjamin popularly Know as devben am a frontend
           developer passionate about shaping the future of the web, one pixel at
           a time With 3 years of experience under my belt, I hail from Nigeria.
@@ -35,13 +35,13 @@ export default function About() {
           do have one friend which is YOU.
         </article>
       </div>
-      <div>
+      <div className="mt-5">
         <h1 className="text-center text-3xl font-extrabold text-gray-500">
           My stacks are:
         </h1>
         <div className="flex flex-col gap-2">
           <div className="flex items-center gap-2">
-            <h2 className="text-2xl text-gray-500">Languages:</h2>
+            <h2 className="text-2xl text-gray-500">Lang:</h2>
             <ul className="flex flex-wrap gap-2 text-gray-100">
               <li>
                 <Tooltip label="CSS3">
@@ -81,7 +81,7 @@ export default function About() {
             </ul>
           </div>
           <div className="flex gap-2">
-            <h2 className="text-2xl text-gray-500">TOOLS:</h2>
+            <h2 className="text-2xl text-gray-500">Tools:</h2>
             <ul className="flex flex-wrap gap-4">
               <li>
                 <Tooltip label="Git">
@@ -112,7 +112,10 @@ export default function About() {
           </div>
         </div>
         <Contact />
+        <div className="mt-6">
         <Link href="https://www.buymeacoffee.com/benlad636v" className="mt-6"> <Image src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="30" width="100"  alt="benlad636v"/></Link>
+
+        </div>
 
       </div>
     </main>

@@ -3,7 +3,7 @@ import { Avatar, Text, ButtonGroup } from "@mantine/core";
 import { Button } from "@/components/ui/button";
 import devbenpics from "@/public/devben.png";
 
-// import { IconBrandGithub, IconBrandInstagram } from "@tabler/icons-react";
+import { IconBrandGithub, IconBrandInstagram } from "@tabler/icons-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Player, Controls } from "@lottiefiles/react-lottie-player";
@@ -42,26 +42,26 @@ export default function MobileHeader() {
         </Text>
         <div className="flex items-center justify-between">
           <span className="flex items-center gap-1 text-[#ccc]">
-            <Player
-              autoplay
-              loop
+          
+            <Link
+              href="https://github.com/git-create-devben"
+            >
+                <Player
+              // autoplay
+              // loop
               src={Github}
               style={{ height: "30px", width: "60px" }}
             ></Player>
-            <Link
-              href="https://github.com/git-create-devben"
-              className="hover:underline"
-            >
-              github.com/git-create-devben
             </Link>
           </span>
           <Link href="https://www.instagram.com/devben.tech/">
-            <Player
+            <IconBrandInstagram stroke={4}  style={{ height: "30px", width: "60px" }}/>
+            {/* <Player
               autoplay
               loop
               src={Instagram}
               style={{ height: "30px", width: "60px" }}
-            ></Player>
+            ></Player> */}
           </Link>
         </div>
         <div className="flex items-center justify-between">
@@ -69,8 +69,8 @@ export default function MobileHeader() {
           
             <a  href="../../devben.pdf" className="flex items-center justify-between" download>
             <Player
-              autoplay
-              loop
+              // autoplay
+              // loop
               src={Resume}
               style={{ height: "30px", width: "30px" }}
             ></Player>

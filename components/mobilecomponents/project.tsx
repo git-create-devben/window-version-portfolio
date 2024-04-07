@@ -13,7 +13,7 @@ import Github from "@/lotties/Github.json";
 
 function Project() {
   return (
-    <div className="space-y-4 p-4 bg-[#000]">
+    <div className="space-y-6 p-6 bg-[#000]">
       {Projects.map((item, index) => (
         <div key={`content-${index}`} className="flex gap-4 ">
          
@@ -107,7 +107,7 @@ const Projects = [
     ),
     description: (
       <p className="text-xs text-slate-300 ">
-        Wallpy is a developers portfolios collection ( dev inspire dev to build awesome portfolio)
+        Wallpy is a developers portfolio collection 
       </p>
     ),
     language: (
