@@ -42,20 +42,18 @@ export default function MobileHeader() {
         </Text>
         <div className="flex items-center justify-between">
           <span className="flex items-center gap-1 text-[#ccc]">
-          
-            <Link
-              href="https://github.com/git-create-devben"
-            >
-                <Player
+            <Link href="https://www.instagram.com/devben.tech/">
+              <IconBrandInstagram stroke={2} />
+            </Link>
+          </span>
+          <Link  href="https://github.com/git-create-devben">
+            {/* <IconBrandInstagram stroke={2} /> */}
+            <Player
               // autoplay
               // loop
               src={Github}
               style={{ height: "30px", width: "60px" }}
             ></Player>
-            </Link>
-          </span>
-          <Link href="https://www.instagram.com/devben.tech/">
-            <IconBrandInstagram stroke={4}  style={{ height: "30px", width: "60px" }}/>
             {/* <Player
               autoplay
               loop
@@ -66,18 +64,24 @@ export default function MobileHeader() {
         </div>
         <div className="flex items-center justify-between">
           <Button className="border-[1px] border-[#ccc]  bg-transparent ">
-          
-            <a  href="../../devben.pdf" className="flex items-center justify-between" download>
-            <Player
-              // autoplay
-              // loop
-              src={Resume}
-              style={{ height: "30px", width: "30px" }}
-            ></Player>
+            <a
+              href="../../devben.pdf"
+              className="flex items-center justify-between"
+              download
+            >
+              <Player
+                // autoplay
+                // loop
+                src={Resume}
+                style={{ height: "30px", width: "30px" }}
+              ></Player>
               Resume
-              </a>
+            </a>
           </Button>
-          <Button onClick={open} className="border-[1px] border-[#ccc]  bg-transparent hover:bg-white hover:text-black">
+          <Button
+            onClick={open}
+            className="border-[1px] border-[#ccc]  bg-transparent hover:bg-white hover:text-black"
+          >
             <Player
               autoplay
               loop
@@ -123,7 +127,6 @@ export default function MobileHeader() {
             </TabsContent>
             <TabsContent value="about">
               <About />
-              
             </TabsContent>
           </TracingBeam>
         </Tabs>
