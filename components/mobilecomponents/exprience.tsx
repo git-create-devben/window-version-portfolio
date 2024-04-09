@@ -27,7 +27,7 @@ export default function Experience() {
           </Link>
         </AlertDescription>
       </Alert>
-      <div className="p-8">
+      <div className="p-4">
         <h1 className="text-2xl text-gray-300 underline-offset-4">
           United States of Africa
         </h1>
