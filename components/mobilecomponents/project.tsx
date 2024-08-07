@@ -14,6 +14,20 @@ import Github from "@/lotties/Github.json";
 function Project() {
   return (
     <div className="space-y-6 p-6 bg-[#000]">
+             <span className="flex items-center gap-1 text-[#ccc]">
+            <Player
+              autoplay
+              loop
+              src={Github}
+              style={{ height: "30px", width: "60px" }}
+            ></Player>
+            <Link
+              href="https://github.com/git-create-devben"
+              className="hover:underline"
+            >
+              View More on Github
+            </Link>
+          </span>
       {Projects.map((item, index) => (
         <div key={`content-${index}`} className="flex gap-4 ">
          
@@ -29,20 +43,7 @@ function Project() {
           </div>
         </div>
       ))}
-       <span className="flex items-center gap-1 text-[#ccc]">
-            <Player
-              autoplay
-              loop
-              src={Github}
-              style={{ height: "30px", width: "60px" }}
-            ></Player>
-            <Link
-              href="https://github.com/git-create-devben"
-              className="hover:underline"
-            >
-              View More on Github
-            </Link>
-          </span>
+
     </div>
   );
 }
