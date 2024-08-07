@@ -3,16 +3,20 @@ import { TextInput, Textarea } from "@mantine/core";
 import { Button } from "./ui/button";
 import { sendEmail } from "../app/sendEmail";
 import { toast } from "react-hot-toast";
+import { useState } from "react";
 export default function Contact() {
-  const ClientAction = async (formData: FormData) => {
-    const result = await sendEmail(formData);
-
-    if (result?.error) {
-      toast.error(result.error);
-    } else {
-      toast.success("Thank You I have receive your message");
-    }
-  };
+    const [isloading, setLoading] = useState(false)
+    const ClientAction = async (formData: FormData) => {
+      setLoading(true);
+      const result = await sendEmail(formData);
+  
+      if (result?.error) {
+        toast.error(result.error);
+      } else {
+        toast.success("Thank you, we have received your message");
+      }
+      setLoading(false);
+    };
 
   return (
     <>
@@ -35,13 +39,14 @@ export default function Contact() {
           className=""
           name="message"
         />
-        <Button
-          type="submit"
-          className="bg-gray-300 text-black hover:bg-gray-400"
-        >
-          Send Message
-        </Button>
+         <Button
+      type="submit"
+      className="bg-gray-300 text-black hover:bg-gray-400"
+      disabled={isloading}
+    >
+      {isloading ? "Submitting..." : "Submit"}
+    </Button>
       </form>
     </>
   );
-}
+  }

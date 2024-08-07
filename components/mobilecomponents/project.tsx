@@ -49,6 +49,37 @@ function Project() {
 
 const Projects = [
   {
+    title: "Loca",
+    link: "https://loca-fawn.vercel.app/chat",
+    image: (
+      <div className="flex h-24 w-44 items-center justify-center rounded-sm bg-slate-400 text-center text-3xl font-extrabold">
+        L
+      </div>
+    ),
+    description: (
+      <p className="text-xs text-slate-300 ">
+       Loca is a localized AI service finder
+       </p>
+    ),
+    language: (
+      <div className="flex gap-2">
+      <Tooltip label="TypeScript">
+         <IconBrandJavascript stroke={2} className="text-white" />
+       </Tooltip>
+       <Tooltip label="TypeScript">
+          <IconBrandTypescript stroke={2} className="text-white" />
+        </Tooltip>
+       <Tooltip label="NextJs">
+         <IconBrandNextjs stroke={2} className="text-white" />
+       </Tooltip>
+       <Tooltip label="TailwindCss">
+         <IconBrandTailwind stroke={2} className="text-white" />
+       </Tooltip>
+       <IconBrandFirebase stroke={2} className="text-white" />
+     </div>
+    ),
+  },
+  {
     title: "AceBot",
     link: "https://github.com/git-create-devben/acebot",
     image: (
