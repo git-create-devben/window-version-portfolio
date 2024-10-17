@@ -13,7 +13,7 @@ const LoadingScreen = () => {
     const delay = setTimeout(() => {
       setLoading(false);
       toast.success("Welcome champ!");
-    }, 2800); // Adjust the delay time as needed
+    }, 1000); // Adjust the delay time as needed
 
     return () => clearTimeout(delay);
   }, []);

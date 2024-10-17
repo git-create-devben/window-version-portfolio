@@ -23,16 +23,16 @@ export default function Experience() {
             href="https://www.linkedin.com/in/benlad/"
             className="text-blue-900 underline"
           >
-            LinkdIn
+            LinkedIn
           </Link>
         </AlertDescription>
       </Alert>
       <div className="p-4">
         <h1 className="text-2xl text-gray-300 underline-offset-4">
-          United States of Africa
+          <Link href="https://arravo.co"  className=" border-b-green-400 border-b-[1px]">Arravo</Link>
         </h1>
         <p className="text-gray-400">Front-end Developer</p>
-        <span className="text-gray-500">Texas, United States</span>
+        <span className="text-gray-500">Logos, Nigeria</span>
         <ul className="mt-2 flex list-disc flex-col text-gray-100">
           <li>Developing new user-facing features</li>
           <li>Determining the structure and design of web pages</li>
@@ -50,10 +50,10 @@ export default function Experience() {
         </ul>
       </div>
       <div className="p-8">
-        <h1 className="text-2xl capitalize text-gray-300 underline-offset-4">
-          HealthGo ICT Firm
+        <h1 className="text-2xl capitalize text-gray-300 underline-offset-4">         
+          <Link href="https://www.healthgotechnologies.com/" className=" border-b-green-400 border-b-[1px]"> HealthGo ICT Firm</Link>
         </h1>
-        <p className="text-gray-400">Front-end Developer</p>
+        <p className="text-gray-400">Front-end Engineer</p>
         <span className="text-gray-500">Lagos, Nigeria</span>
         <ul className="mt-2 flex list-disc flex-col text-gray-100">
           <li>

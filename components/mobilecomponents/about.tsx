@@ -27,7 +27,7 @@ export default function About() {
         <article className="text-gray-200 mt-4">
           Hi ✌️, I&apos;m Benjamin popularly Know as devben am a frontend
           developer passionate about shaping the future of the web, one pixel at
-          a time With 3 years of experience under my belt, I hail from Nigeria.
+          a time With 3+ years of experience under my belt, I hail from Nigeria.
           While coding is my bread and butter, I also find joy in cooking up
           delicious meals and honing my skills on the football field or table
           tennis court. Music is my constant companion as I work on crafting

@@ -17,7 +17,7 @@ export function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="p-4 max-w-7xl mx-auto relative z-10 w-full pt-20 md:pt-0"
+        className="p-4 max-w-7xl mx-auto relative z-10 w-full pt-20 lg:mt-12 xl:mt-12"
       >
         <motion.h1 
           initial={{ scale: 0.9 }}
