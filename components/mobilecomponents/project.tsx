@@ -51,7 +51,7 @@ function Project() {
 const Projects = [
   {
     title: "CareMore",
-    link: "https://loca-fawn.vercel.app/chat",
+    link: "https://caremore-mu.vercel.app/",
     image: (
       <div className="flex h-24 w-44 items-center justify-center rounded-sm bg-slate-400 text-center text-3xl font-extrabold">
         C
